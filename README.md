@@ -21,7 +21,8 @@
 ---
 
 ## 🌐 Introduction
-????
+
+Nossa solução envolve o uso avançado de IA, utilizando inicialmente o Jarvis AI com prompts do ChatGPT para criar fluxos personalizados dentro da Starkbank. Em etapas posteriores, utilizaremos IA Generativa para desenvolver fluxos automatizados, demonstrativos de pagamentos e uma personalização completa, adaptada às necessidades específicas de cada cliente. 
 
 ## Application Programming Interface StarkBank (SDK)
 
