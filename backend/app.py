@@ -5,6 +5,7 @@ from routes.split import split_bp
 from routes.transfer import transfer_bp
 from routes.brcode_payment import brcode_payment_bp
 from routes.tax_payment import tax_payment_bp
+from routes.generate_flowchart import chatgpt_bp
 import starkbank
 import config
 
@@ -18,6 +19,7 @@ app.register_blueprint(split_bp, url_prefix='/v2/split')
 app.register_blueprint(transfer_bp, url_prefix='/v2/transfer')
 app.register_blueprint(brcode_payment_bp, url_prefix='/v2/brcode-payment')
 app.register_blueprint(tax_payment_bp, url_prefix='/v2/tax-payment')
+app.register_blueprint(chatgpt_bp, url_prefix='/v2/tax-payment')
 
 swagger_template = {
     "swagger": "2.0",
