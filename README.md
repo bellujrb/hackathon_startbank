@@ -16,7 +16,8 @@
 
 ---
 
-> _Video Demo Application and API: 
+> _Video Demo Application and API: https://youtu.be/wONQ-YO3FNY
+> MVP: https://starkup.netlify.app
 
 ---
 
