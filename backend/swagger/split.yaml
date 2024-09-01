@@ -1,0 +1,49 @@
+openapi: 3.0.0
+info:
+  version: 1.0.0
+  title: Split API
+  description: API para gerenciamento de splits no StarkBank
+
+paths:
+  /v2/split/receiver:
+    post:
+      summary: Cria um novo SplitReceiver
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                name:
+                  type: string
+                  example: "Daenerys Targaryen Stormborn"
+                tax_id:
+                  type: string
+                  example: "594.739.480-42"
+                bank_code:
+                  type: string
+                  example: "341"
+                branch_code:
+                  type: string
+                  example: "2201"
+                account_number:
+                  type: string
+                  example: "76543-8"
+                account_type:
+                  type: string
+                  example: "salary"
+      responses:
+        '200':
+          description: SplitReceiver criado com sucesso
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  id:
+                    type: string
+                    example: "1234567890"
+                  name:
+                    type: string
+                    example: "Daenerys Targaryen Stormborn"

@@ -1,39 +1,39 @@
-from flask import Flask, request, jsonify
-import starkbank
+from flask import Flask
 from flask_cors import CORS
+from flasgger import Swagger
+from routes.split import split_bp
+from routes.transfer import transfer_bp
+from routes.brcode_payment import brcode_payment_bp
+from routes.tax_payment import tax_payment_bp
+import starkbank
+import config
 
 app = Flask(__name__)
 
 CORS(app, resources={r"/*": {"origins": "*"}}, supports_credentials=True)
 
-with open('privateKey.pem', 'r') as file:
-    private_key = file.read()
+starkbank.user = config.project
 
-project = starkbank.Project(
-    environment="sandbox",  
-    id="4651416945688576",  
-    private_key=private_key  
-)
+app.register_blueprint(split_bp, url_prefix='/v2/split')
+app.register_blueprint(transfer_bp, url_prefix='/v2/transfer')
+app.register_blueprint(brcode_payment_bp, url_prefix='/v2/brcode-payment')
+app.register_blueprint(tax_payment_bp, url_prefix='/v2/tax-payment')
 
-starkbank.user = project
+swagger_template = {
+    "swagger": "2.0",
+    "info": {
+        "title": "StarkBank API",
+        "description": "API para interagir com o StarkBank",
+        "version": "1.0.0"
+    },
+    "basePath": "/", \
+    "schemes": [
+        "http",
+        "https"
+    ]
+}
 
-@app.route('/v2/split-receiver', methods=['POST'])
-def create_split_receiver():
-        receiver = starkbank.splitreceiver.create([
-            starkbank.SplitReceiver(
-                name="Daenerys Targaryen Stormborn",
-                tax_id="594.739.480-42",
-                bank_code="341",
-                branch_code="2201",
-                account_number="76543-8",
-                account_type="salary"
-        )])
-
-        receiver_dict = receiver[0].__dict__
-
-        print("SplitReceiver criado:", receiver_dict)
-
-        return jsonify(receiver_dict), 200
+swagger = Swagger(app, template=swagger_template)
 
 if __name__ == '__main__':
     app.run(port=8080)
