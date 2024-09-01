@@ -97,7 +97,7 @@ Devido a restrições de tempo, alguns recursos são simulados no front-end.
 E isso será feito com base nos dados de transações e comportamento dos clientes dentro da plataforma.
 2. O Jarvis AI 2.0, ou AI Generativa significa otimização de tempo e sentimento de exclusividade.
 
-## 📂 Project File Tree
+## 📂 Árvore de arquivos do projeto
     
 ```
 hackathon_starkbank
@@ -113,11 +113,11 @@ hackathon_starkbank
 #### `hackathon_starkbank`
 
 - `front-end`
-    - Frontend Application
+    - Aplicação Frontend
 - `back-end`
-    - Back-end Application using API StarkBank and OpenAI
+    - Aplicação Back-end usando API StarkBank e OpenAI
 - `README.md`
-    - Documentation Project
+    - Projeto de Documentação
 
 ---
 
