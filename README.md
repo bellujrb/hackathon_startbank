@@ -83,6 +83,16 @@ We use 100% of the StarkBank SDK.
 
 ---
 
+## **Aplicação do JARVIS AI**
+
+1. É utilizado o consumo da API do ChatGPT dentro da plataforma do Starkbank para criação de fluxos de pagamento. Todo o processo é feito de forma intuita através de comandos simples que podem ser escritos ou falados.
+   1.2 Após o prompt, a API integrada ao sistema criada um fluxo que pode ser totalmente customizado conforme o desejo do cliente. Pode ser usado também os template pré criados também.
+
+**Uso futuro de GEN AI**
+1. Nossos próximos passos são a integração com uma AI Generativa que criará fluxos totalmente personalizados, customizavéis e únicos.
+E isso será feito com base nos dados de transações e comportamento dos clientes dentro da plataforma.
+2. O Jarvis AI 2.0, ou AI Generativa significa otimização de tempo e sentimento de exclusividade.
+
 ## 📂 Project File Tree
     
 ```
