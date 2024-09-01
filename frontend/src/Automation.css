@@ -1,0 +1,80 @@
+.AutomationCanvas {
+    --edges-stroke-color: green;
+    width: 90vw;
+    height: 90vh;
+    background-color: var(--color-base100);
+}
+
+.react-flow__edge-path {
+    stroke: green;
+}
+
+.Controls {
+    top: 10px;
+    bottom: auto;
+}
+
+.reactflow-wrapper {
+    height: 90vh;
+    width: 90vw;
+}
+
+/* export const AutomationCanvas = css`
+  --edges-stroke-color: green;
+
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--color-base100);
+
+  .react-flow__edge-path {
+    stroke: var(--edges-stroke-color);
+  }
+`;
+
+export const Controls = css`
+  top: 10px;
+  bottom: auto;
+`; */
+
+.node-dropzone {
+    width: 24px; /* Aumentando um pouco o tamanho para melhor usabilidade */
+    height: 24px;
+    border: 2px solid #1A73E8; /* Azul inspirado na identidade visual da Stark Bank */
+    background-color: #FFFFFF; /* Fundo branco para manter o visual clean */
+    border-radius: 50%; /* Mantém a borda circular */
+    color: #1A73E8; /* Texto (se houver) na cor azul */
+    cursor: pointer;
+    display: flex;
+    align-items: center; /* Alinhamento centralizado */
+    justify-content: center; /* Alinhamento centralizado */
+    transition: background-color 0.3s ease, border-color 0.3s ease; /* Transição suave para o hover */
+}
+
+.node-dropzone:hover {
+    color: white;
+    background-color: #1A73E8; /* Verde suave ao passar o mouse, inspirado na cor da Stark Bank */
+    border-color: white; /* Muda a cor da borda para verde */
+}
+
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: auto;
+    border: 1px solid;
+    padding: 10px;
+    margin-bottom: 450px;
+}
+
+.SidebarItem {
+    background-color: blue;
+    padding: 10px;
+    color: white;
+    text-align: center;
+}
+
+.SidebarItem:hover {
+    background-color: rgb(153, 0, 255);
+    cursor: pointer;
+}
