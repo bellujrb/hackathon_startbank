@@ -110,7 +110,7 @@ hackathon_starkbank
 ```
 ---
 
-#### `hackathon_btg`
+#### `hackathon_starkbank`
 
 - `front-end`
     - Frontend Application
