@@ -1,10 +1,13 @@
 from flask import Blueprint, request, jsonify
 import openai
+from dotenv import load_dotenv
+import os
+
+load_dotenv()
 
 chatgpt_bp = Blueprint('chatgpt_bp', __name__)
 
-# Configure your OpenAI API key
-openai.api_key = "sk-HPmun7ynbVUTX6TgxwTc7oy_fQlQI8Ng3k5mXAv5L1T3BlbkFJF_SlLYZMDG81v_J4AX2pV3XKYrmb3bDY68_Dw5X3gA"
+openai.api_key = os.getenv("OPENAI_API_KEY")
 
 @chatgpt_bp.route('/generate-flowchart', methods=['POST'])
 def generate_flowchart():
@@ -51,4 +54,3 @@ def generate_flowchart():
     generated_text = response.choices[0].text.strip()
 
     return jsonify({"response": generated_text})
-
