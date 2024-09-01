@@ -105,16 +105,16 @@ hackathon_starkbank
 
 ---
 
+## 🛠 Tech Stack (Backend)
+- JavaScript and React (Vite)
+- React Flow
+
+---
+
 ## 🛠 Tech Stack Mobile
 - Python
 - StarkBank SDK
 - OPEN AI API
-
----
-
-## 🛠 Tech Stack (Backend)
-- JavaScript and React (Vite)
-- React Flow
 
 ---
 
