@@ -20,33 +20,37 @@
 
 ---
 
-## 🌐 Introduction
+## 🌐 Introdução
 
 Nossa solução envolve o uso avançado de IA, utilizando inicialmente o Jarvis AI com prompts do ChatGPT para criar fluxos personalizados dentro da Starkbank. 
 Em etapas posteriores, utilizaremos IA Generativa para desenvolver fluxos automatizados, demonstrativos de pagamentos e uma personalização completa, adaptada às necessidades específicas de cada cliente. 
 
-## Application Programming Interface StarkBank (SDK)
+## API StarkBank
 
-We use 100% of the StarkBank SDK.
+Usamos 100% do StarkBank SDK.
 
-## 🛠 Installation (Frontend)
+## Mocks no Frontend
 
-1. **Pre-requisites**
-    - Make sure you have NodeJS installed on your machine.
+Devido a restrições de tempo, alguns recursos são simulados no front-end.
 
-2. **Clone the Repository**
+## 🛠 Instalação (Frontend)
+
+1. **Pre-requisitos**
+    - Certifique-se de ter o NodeJS instalado na sua máquina.
+    
+2. **Clone ou Repositório**
 
     ```bash
     git clone https://github.com/bellujrb/hackathon_stark-bank/frontend
     ```
 
-3. **Install Dependencies**
+3. **Instalar dependências**
 
     ```bash
     npm install
     ```
 
-4. **Run the App**
+4. **Inicie o Programa**
 
     ```bash
     npm run dev
@@ -54,28 +58,28 @@ We use 100% of the StarkBank SDK.
 
 ---
 
-## 🛠 Installation (Backend)
+## 🛠 Instalação (Backend)
 
-1. **Pre-requisites**
-    - Make sure you have Python installed on your machine.
+1. **Pre-requisitos**
+    - Certifique-se de ter o Python instalado na sua máquina.
 
     ```bash
     https://docs.python.org/3/using/index.html
     ```
 
-2. **Clone the Repository**
+2. **Clone o Repositório**
 
     ```bash
     git clone https://github.com/bellujrb/hackathon_starkbank/backend
     ```
 
-3. **Install Dependencies**
+3. **Instalar dependências**
 
     ```bash
     pip install
     ```
 
-4. **Run the App**
+4. **Inicie o programa**
 
     ```bash
     python app.py
